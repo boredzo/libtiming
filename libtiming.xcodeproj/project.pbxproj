@@ -352,6 +352,7 @@
 		};
 		31B1BD59147CA92A00C6B32F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B1BD5E147CAAF200C6B32F /* Warnings.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/libtiming.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -364,6 +365,7 @@
 		};
 		31B1BD5A147CA92A00C6B32F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B1BD5E147CAAF200C6B32F /* Warnings.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/libtiming.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -417,6 +419,7 @@
 				31B1BD5A147CA92A00C6B32F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31B1BD5B147CA92A00C6B32F /* Build configuration list for PBXNativeTarget "libtimingTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +428,7 @@
 				31B1BD5D147CA92A00C6B32F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
