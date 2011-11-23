@@ -2,6 +2,11 @@
 // Prefix header for all source files of the 'libtiming' target in the 'libtiming' project
 //
 
+#include <stdbool.h>
+#include <sys/types.h>
+
 #ifdef __OBJC__
-	#import <Foundation/Foundation.h>
+#	import <Foundation/Foundation.h>
 #endif
+
+#include <mach/mach_time.h>

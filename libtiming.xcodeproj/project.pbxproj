@@ -10,11 +10,19 @@
 		31B1BD38147CA92A00C6B32F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD37147CA92A00C6B32F /* Foundation.framework */; };
 		31B1BD3E147CA92A00C6B32F /* libtiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD3D147CA92A00C6B32F /* libtiming.m */; };
 		31B1BD46147CA92A00C6B32F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD45147CA92A00C6B32F /* SenTestingKit.framework */; };
-		31B1BD48147CA92A00C6B32F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD47147CA92A00C6B32F /* UIKit.framework */; };
 		31B1BD49147CA92A00C6B32F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD37147CA92A00C6B32F /* Foundation.framework */; };
 		31B1BD4C147CA92A00C6B32F /* liblibtiming.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD34147CA92A00C6B32F /* liblibtiming.a */; };
 		31B1BD52147CA92A00C6B32F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31B1BD50147CA92A00C6B32F /* InfoPlist.strings */; };
 		31B1BD55147CA92A00C6B32F /* libtimingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD54147CA92A00C6B32F /* libtimingTests.m */; };
+		31B1BD5F147CAAF200C6B32F /* Warnings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 31B1BD5E147CAAF200C6B32F /* Warnings.xcconfig */; };
+		31B1BD63147CB1D800C6B32F /* PRHTimingBlockRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B1BD61147CB1D800C6B32F /* PRHTimingBlockRecord.h */; };
+		31B1BD64147CB1D800C6B32F /* PRHTimingBlockRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD62147CB1D800C6B32F /* PRHTimingBlockRecord.m */; };
+		31B1BD65147CB1D800C6B32F /* PRHTimingBlockRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD62147CB1D800C6B32F /* PRHTimingBlockRecord.m */; };
+		31B1BD68147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B1BD66147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.h */; };
+		31B1BD69147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD67147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.m */; };
+		31B1BD6A147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD67147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.m */; };
+		31B1BD6D147CF39000C6B32F /* TestAbsoluteTimeConversions.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B1BD6B147CF39000C6B32F /* TestAbsoluteTimeConversions.h */; };
+		31B1BD6F147CF39000C6B32F /* TestAbsoluteTimeConversions.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD6C147CF39000C6B32F /* TestAbsoluteTimeConversions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +38,22 @@
 /* Begin PBXFileReference section */
 		31B1BD34147CA92A00C6B32F /* liblibtiming.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibtiming.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B1BD37147CA92A00C6B32F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		31B1BD3B147CA92A00C6B32F /* libtiming-Prefix.pch */ = {isa = PBXFileReference; path = "libtiming-Prefix.pch"; sourceTree = "<group>"; };
-		31B1BD3C147CA92A00C6B32F /* libtiming.h */ = {isa = PBXFileReference; path = libtiming.h; sourceTree = "<group>"; };
+		31B1BD3B147CA92A00C6B32F /* libtiming-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libtiming-Prefix.pch"; sourceTree = "<group>"; };
+		31B1BD3C147CA92A00C6B32F /* libtiming.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libtiming.h; sourceTree = "<group>"; };
 		31B1BD3D147CA92A00C6B32F /* libtiming.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libtiming.m; sourceTree = "<group>"; };
 		31B1BD44147CA92A00C6B32F /* libtimingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libtimingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B1BD45147CA92A00C6B32F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		31B1BD47147CA92A00C6B32F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		31B1BD4F147CA92A00C6B32F /* libtimingTests-Info.plist */ = {isa = PBXFileReference; path = "libtimingTests-Info.plist"; sourceTree = "<group>"; };
+		31B1BD4F147CA92A00C6B32F /* libtimingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libtimingTests-Info.plist"; sourceTree = "<group>"; };
 		31B1BD51147CA92A00C6B32F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		31B1BD53147CA92A00C6B32F /* libtimingTests.h */ = {isa = PBXFileReference; path = libtimingTests.h; sourceTree = "<group>"; };
+		31B1BD53147CA92A00C6B32F /* libtimingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libtimingTests.h; sourceTree = "<group>"; };
 		31B1BD54147CA92A00C6B32F /* libtimingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libtimingTests.m; sourceTree = "<group>"; };
+		31B1BD5E147CAAF200C6B32F /* Warnings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		31B1BD61147CB1D800C6B32F /* PRHTimingBlockRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHTimingBlockRecord.h; sourceTree = "<group>"; };
+		31B1BD62147CB1D800C6B32F /* PRHTimingBlockRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHTimingBlockRecord.m; sourceTree = "<group>"; };
+		31B1BD66147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRHAbsoluteTimeToNanoseconds.h; sourceTree = "<group>"; };
+		31B1BD67147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRHAbsoluteTimeToNanoseconds.m; sourceTree = "<group>"; };
+		31B1BD6B147CF39000C6B32F /* TestAbsoluteTimeConversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAbsoluteTimeConversions.h; sourceTree = "<group>"; };
+		31B1BD6C147CF39000C6B32F /* TestAbsoluteTimeConversions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAbsoluteTimeConversions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B1BD46147CA92A00C6B32F /* SenTestingKit.framework in Frameworks */,
-				31B1BD48147CA92A00C6B32F /* UIKit.framework in Frameworks */,
 				31B1BD49147CA92A00C6B32F /* Foundation.framework in Frameworks */,
 				31B1BD4C147CA92A00C6B32F /* liblibtiming.a in Frameworks */,
 			);
@@ -89,7 +102,6 @@
 			children = (
 				31B1BD37147CA92A00C6B32F /* Foundation.framework */,
 				31B1BD45147CA92A00C6B32F /* SenTestingKit.framework */,
-				31B1BD47147CA92A00C6B32F /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -97,8 +109,12 @@
 		31B1BD39147CA92A00C6B32F /* libtiming */ = {
 			isa = PBXGroup;
 			children = (
-				31B1BD3C147CA92A00C6B32F /* libtiming.h */,
+				31B1BD60147CB1B800C6B32F /* Public Headers */,
 				31B1BD3D147CA92A00C6B32F /* libtiming.m */,
+				31B1BD61147CB1D800C6B32F /* PRHTimingBlockRecord.h */,
+				31B1BD62147CB1D800C6B32F /* PRHTimingBlockRecord.m */,
+				31B1BD66147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.h */,
+				31B1BD67147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.m */,
 				31B1BD3A147CA92A00C6B32F /* Supporting Files */,
 			);
 			path = libtiming;
@@ -107,6 +123,7 @@
 		31B1BD3A147CA92A00C6B32F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				31B1BD5E147CAAF200C6B32F /* Warnings.xcconfig */,
 				31B1BD3B147CA92A00C6B32F /* libtiming-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -117,6 +134,8 @@
 			children = (
 				31B1BD53147CA92A00C6B32F /* libtimingTests.h */,
 				31B1BD54147CA92A00C6B32F /* libtimingTests.m */,
+				31B1BD6B147CF39000C6B32F /* TestAbsoluteTimeConversions.h */,
+				31B1BD6C147CF39000C6B32F /* TestAbsoluteTimeConversions.m */,
 				31B1BD4E147CA92A00C6B32F /* Supporting Files */,
 			);
 			path = libtimingTests;
@@ -131,6 +150,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		31B1BD60147CB1B800C6B32F /* Public Headers */ = {
+			isa = PBXGroup;
+			children = (
+				31B1BD3C147CA92A00C6B32F /* libtiming.h */,
+			);
+			name = "Public Headers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -138,6 +165,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B1BD63147CB1D800C6B32F /* PRHTimingBlockRecord.h in Headers */,
+				31B1BD68147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.h in Headers */,
+				31B1BD6D147CF39000C6B32F /* TestAbsoluteTimeConversions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B1BD52147CA92A00C6B32F /* InfoPlist.strings in Resources */,
+				31B1BD5F147CAAF200C6B32F /* Warnings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B1BD3E147CA92A00C6B32F /* libtiming.m in Sources */,
+				31B1BD64147CB1D800C6B32F /* PRHTimingBlockRecord.m in Sources */,
+				31B1BD69147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B1BD55147CA92A00C6B32F /* libtimingTests.m in Sources */,
+				31B1BD65147CB1D800C6B32F /* PRHTimingBlockRecord.m in Sources */,
+				31B1BD6A147CF1AF00C6B32F /* PRHAbsoluteTimeToNanoseconds.m in Sources */,
+				31B1BD6F147CF39000C6B32F /* TestAbsoluteTimeConversions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -292,7 +328,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
@@ -300,7 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -309,7 +345,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.7;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -341,10 +377,7 @@
 		31B1BD5C147CA92A00C6B32F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libtiming/libtiming-Prefix.pch";
 				INFOPLIST_FILE = "libtimingTests/libtimingTests-Info.plist";
@@ -356,10 +389,7 @@
 		31B1BD5D147CA92A00C6B32F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libtiming/libtiming-Prefix.pch";
 				INFOPLIST_FILE = "libtimingTests/libtimingTests-Info.plist";
