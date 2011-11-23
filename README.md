@@ -15,6 +15,7 @@ This basically replaces making a command-line tool for each approach. Instead, y
     	exit(!finishedNormally);
     };
     [comparator startWithReturnBlock:PRHTimingLogToConsoleReturnBlock];
+    dispatch_main();
 
 (`PRHTimingLogToConsoleReturnBlock` is a predefined block that logs a single result to the Console. You can write your own block and use that instead, or in addition.)
 
