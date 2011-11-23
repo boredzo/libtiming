@@ -28,4 +28,6 @@ This basically replaces making a command-line tool for each approach. Instead, y
 
 ## What's needed?
 
-- More test cases. For example, it would probably be nice to test that the maximums are truly enforced.
+- More test cases. For example:
+  - It would probably be nice to test that the maximums are truly enforced.
+  - It would also be good to test it with a serial queue.
