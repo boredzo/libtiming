@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31B1BD38147CA92A00C6B32F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD37147CA92A00C6B32F /* Foundation.framework */; };
+		31B1BD3E147CA92A00C6B32F /* libtiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD3D147CA92A00C6B32F /* libtiming.m */; };
+		31B1BD46147CA92A00C6B32F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD45147CA92A00C6B32F /* SenTestingKit.framework */; };
+		31B1BD48147CA92A00C6B32F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD47147CA92A00C6B32F /* UIKit.framework */; };
+		31B1BD49147CA92A00C6B32F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD37147CA92A00C6B32F /* Foundation.framework */; };
+		31B1BD4C147CA92A00C6B32F /* liblibtiming.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B1BD34147CA92A00C6B32F /* liblibtiming.a */; };
+		31B1BD52147CA92A00C6B32F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31B1BD50147CA92A00C6B32F /* InfoPlist.strings */; };
+		31B1BD55147CA92A00C6B32F /* libtimingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B1BD54147CA92A00C6B32F /* libtimingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31B1BD4A147CA92A00C6B32F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31B1BD2B147CA92A00C6B32F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31B1BD33147CA92A00C6B32F;
+			remoteInfo = libtiming;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31B1BD34147CA92A00C6B32F /* liblibtiming.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibtiming.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B1BD37147CA92A00C6B32F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31B1BD3B147CA92A00C6B32F /* libtiming-Prefix.pch */ = {isa = PBXFileReference; path = "libtiming-Prefix.pch"; sourceTree = "<group>"; };
+		31B1BD3C147CA92A00C6B32F /* libtiming.h */ = {isa = PBXFileReference; path = libtiming.h; sourceTree = "<group>"; };
+		31B1BD3D147CA92A00C6B32F /* libtiming.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libtiming.m; sourceTree = "<group>"; };
+		31B1BD44147CA92A00C6B32F /* libtimingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libtimingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B1BD45147CA92A00C6B32F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		31B1BD47147CA92A00C6B32F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		31B1BD4F147CA92A00C6B32F /* libtimingTests-Info.plist */ = {isa = PBXFileReference; path = "libtimingTests-Info.plist"; sourceTree = "<group>"; };
+		31B1BD51147CA92A00C6B32F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31B1BD53147CA92A00C6B32F /* libtimingTests.h */ = {isa = PBXFileReference; path = libtimingTests.h; sourceTree = "<group>"; };
+		31B1BD54147CA92A00C6B32F /* libtimingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libtimingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31B1BD31147CA92A00C6B32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B1BD38147CA92A00C6B32F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B1BD40147CA92A00C6B32F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B1BD46147CA92A00C6B32F /* SenTestingKit.framework in Frameworks */,
+				31B1BD48147CA92A00C6B32F /* UIKit.framework in Frameworks */,
+				31B1BD49147CA92A00C6B32F /* Foundation.framework in Frameworks */,
+				31B1BD4C147CA92A00C6B32F /* liblibtiming.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31B1BD29147CA92A00C6B32F = {
+			isa = PBXGroup;
+			children = (
+				31B1BD39147CA92A00C6B32F /* libtiming */,
+				31B1BD4D147CA92A00C6B32F /* libtimingTests */,
+				31B1BD36147CA92A00C6B32F /* Frameworks */,
+				31B1BD35147CA92A00C6B32F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31B1BD35147CA92A00C6B32F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31B1BD34147CA92A00C6B32F /* liblibtiming.a */,
+				31B1BD44147CA92A00C6B32F /* libtimingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31B1BD36147CA92A00C6B32F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31B1BD37147CA92A00C6B32F /* Foundation.framework */,
+				31B1BD45147CA92A00C6B32F /* SenTestingKit.framework */,
+				31B1BD47147CA92A00C6B32F /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31B1BD39147CA92A00C6B32F /* libtiming */ = {
+			isa = PBXGroup;
+			children = (
+				31B1BD3C147CA92A00C6B32F /* libtiming.h */,
+				31B1BD3D147CA92A00C6B32F /* libtiming.m */,
+				31B1BD3A147CA92A00C6B32F /* Supporting Files */,
+			);
+			path = libtiming;
+			sourceTree = "<group>";
+		};
+		31B1BD3A147CA92A00C6B32F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31B1BD3B147CA92A00C6B32F /* libtiming-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31B1BD4D147CA92A00C6B32F /* libtimingTests */ = {
+			isa = PBXGroup;
+			children = (
+				31B1BD53147CA92A00C6B32F /* libtimingTests.h */,
+				31B1BD54147CA92A00C6B32F /* libtimingTests.m */,
+				31B1BD4E147CA92A00C6B32F /* Supporting Files */,
+			);
+			path = libtimingTests;
+			sourceTree = "<group>";
+		};
+		31B1BD4E147CA92A00C6B32F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31B1BD4F147CA92A00C6B32F /* libtimingTests-Info.plist */,
+				31B1BD50147CA92A00C6B32F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		31B1BD32147CA92A00C6B32F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31B1BD33147CA92A00C6B32F /* libtiming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31B1BD58147CA92A00C6B32F /* Build configuration list for PBXNativeTarget "libtiming" */;
+			buildPhases = (
+				31B1BD30147CA92A00C6B32F /* Sources */,
+				31B1BD31147CA92A00C6B32F /* Frameworks */,
+				31B1BD32147CA92A00C6B32F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libtiming;
+			productName = libtiming;
+			productReference = 31B1BD34147CA92A00C6B32F /* liblibtiming.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		31B1BD43147CA92A00C6B32F /* libtimingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31B1BD5B147CA92A00C6B32F /* Build configuration list for PBXNativeTarget "libtimingTests" */;
+			buildPhases = (
+				31B1BD3F147CA92A00C6B32F /* Sources */,
+				31B1BD40147CA92A00C6B32F /* Frameworks */,
+				31B1BD41147CA92A00C6B32F /* Resources */,
+				31B1BD42147CA92A00C6B32F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31B1BD4B147CA92A00C6B32F /* PBXTargetDependency */,
+			);
+			name = libtimingTests;
+			productName = libtimingTests;
+			productReference = 31B1BD44147CA92A00C6B32F /* libtimingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31B1BD2B147CA92A00C6B32F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 31B1BD2E147CA92A00C6B32F /* Build configuration list for PBXProject "libtiming" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 31B1BD29147CA92A00C6B32F;
+			productRefGroup = 31B1BD35147CA92A00C6B32F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31B1BD33147CA92A00C6B32F /* libtiming */,
+				31B1BD43147CA92A00C6B32F /* libtimingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31B1BD41147CA92A00C6B32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B1BD52147CA92A00C6B32F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31B1BD42147CA92A00C6B32F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31B1BD30147CA92A00C6B32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B1BD3E147CA92A00C6B32F /* libtiming.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B1BD3F147CA92A00C6B32F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31B1BD55147CA92A00C6B32F /* libtimingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31B1BD4B147CA92A00C6B32F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31B1BD33147CA92A00C6B32F /* libtiming */;
+			targetProxy = 31B1BD4A147CA92A00C6B32F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31B1BD50147CA92A00C6B32F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31B1BD51147CA92A00C6B32F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31B1BD56147CA92A00C6B32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		31B1BD57147CA92A00C6B32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31B1BD59147CA92A00C6B32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libtiming.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libtiming/libtiming-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		31B1BD5A147CA92A00C6B32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libtiming.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libtiming/libtiming-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		31B1BD5C147CA92A00C6B32F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libtiming/libtiming-Prefix.pch";
+				INFOPLIST_FILE = "libtimingTests/libtimingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		31B1BD5D147CA92A00C6B32F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libtiming/libtiming-Prefix.pch";
+				INFOPLIST_FILE = "libtimingTests/libtimingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31B1BD2E147CA92A00C6B32F /* Build configuration list for PBXProject "libtiming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B1BD56147CA92A00C6B32F /* Debug */,
+				31B1BD57147CA92A00C6B32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31B1BD58147CA92A00C6B32F /* Build configuration list for PBXNativeTarget "libtiming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B1BD59147CA92A00C6B32F /* Debug */,
+				31B1BD5A147CA92A00C6B32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		31B1BD5B147CA92A00C6B32F /* Build configuration list for PBXNativeTarget "libtimingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B1BD5C147CA92A00C6B32F /* Debug */,
+				31B1BD5D147CA92A00C6B32F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31B1BD2B147CA92A00C6B32F /* Project object */;
+}
