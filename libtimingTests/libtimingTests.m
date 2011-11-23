@@ -59,7 +59,6 @@
 
 	dispatch_queue_t queue = self->comparator.queue;
 	STAssertTrue(queue != NULL, @"A comparator should have a queue by default");
-	dispatch_debug(queue, "Comparator's queue");
 
 	__block libtimingBasicTest *bself = self;
 	__block NSUInteger numberOfOperationsRecorded = 0;
