@@ -119,7 +119,7 @@ PRHTimingReturnBlock PRHTimingLogToConsoleReturnBlock = ^(NSString *name, NSUInt
 
 	{
 		dispatch_source_t source = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, /*handle*/ 0, /*mask*/ 0, queue);
-		dispatch_source_set_timer(source, DISPATCH_TIME_NOW, /*interval*/ 1 /*nanosecond*/, /*leeway*/ 0);
+		dispatch_source_set_timer(source, DISPATCH_TIME_NOW, /*interval*/ 0 /*nanosecond*/, /*leeway*/ 0);
 		dispatch_group_t group = dispatch_group_create();
 		dispatch_source_set_event_handler(source, ^{
 			uint64_t now = mach_absolute_time();
