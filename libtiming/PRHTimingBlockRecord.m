@@ -38,7 +38,6 @@
 
 - (void) markAsCompleted {
 	timeOfCompletion = lastRunTime;
-	NSLog(@"Total time taken in absolute units: %llu", timeTakenInAbsoluteUnits);
 }
 
 - (NSTimeInterval) timeTaken {
