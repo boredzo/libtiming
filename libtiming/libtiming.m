@@ -108,9 +108,6 @@ PRHTimingReturnBlock PRHTimingLogToConsoleReturnBlock = ^(NSString *name, NSUInt
 	dispatch_queue_t queue = self.queue;
 
 	startTime = mach_absolute_time();
-	mach_timebase_info_data_t timebase;
-	kern_return_t err = mach_timebase_info(&timebase);
-	NSAssert(err == KERN_SUCCESS, @"mach_timebase_info returned %i", err);
 	uint64_t timeLimitInAbsoluteTime = PRHSecondsToAbsoluteTime(self.timeLimit);
 	softDeadline = startTime + timeLimitInAbsoluteTime;
 	int64_t timeLimitHeadroomInNanoseconds = (self.timeLimitHeadroom * NSEC_PER_SEC);
