@@ -9,6 +9,7 @@
 #import "libtiming.h"
 
 #import "PRHTimingBlockRecord.h"
+#import "PRHAbsoluteTimeToNanoseconds.h"
 
 PRHTimingReturnBlock PRHTimingLogToConsoleReturnBlock = ^(NSString *name, NSUInteger iterations, NSTimeInterval timeTaken, NSTimeInterval timePerIteration) {
 	NSLog(@"%@ ran %lu times in %f seconds (%f microseconds per iteration)", name, iterations, timeTaken, timePerIteration * USEC_PER_SEC);
@@ -110,11 +111,10 @@ PRHTimingReturnBlock PRHTimingLogToConsoleReturnBlock = ^(NSString *name, NSUInt
 	mach_timebase_info_data_t timebase;
 	kern_return_t err = mach_timebase_info(&timebase);
 	NSAssert(err == KERN_SUCCESS, @"mach_timebase_info returned %i", err);
-	NSTimeInterval nanosecondsPerAbsoluteTimeUnit = (NSTimeInterval)timebase.numer / (NSTimeInterval)timebase.denom;
-	uint64_t timeLimitInAbsoluteTime = (self.timeLimit * NSEC_PER_SEC) / nanosecondsPerAbsoluteTimeUnit;
+	uint64_t timeLimitInAbsoluteTime = PRHSecondsToAbsoluteTime(self.timeLimit);
 	softDeadline = startTime + timeLimitInAbsoluteTime;
 	int64_t timeLimitHeadroomInNanoseconds = (self.timeLimitHeadroom * NSEC_PER_SEC);
-	uint64_t timeLimitHeadroomInAbsoluteTime = timeLimitHeadroomInNanoseconds / nanosecondsPerAbsoluteTimeUnit;
+	uint64_t timeLimitHeadroomInAbsoluteTime = PRHNanosecondsToAbsoluteTime(timeLimitHeadroomInNanoseconds);
 	totalTimeLimit = timeLimitInAbsoluteTime + timeLimitHeadroomInAbsoluteTime;
 
 	{
