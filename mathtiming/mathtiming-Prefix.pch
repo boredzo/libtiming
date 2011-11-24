@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'mathtiming' target in the 'mathtiming' project
+//
+
+#ifdef __OBJC__
+#	import <Foundation/Foundation.h>
+#endif
