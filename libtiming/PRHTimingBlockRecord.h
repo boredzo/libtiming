@@ -23,4 +23,12 @@
 
 @property(nonatomic, readonly) NSTimeInterval timeTaken;
 
+@property(copy) PRHTimingReturnBlock returnBlock;
+
+- (void) startTimingOnQueue:(dispatch_queue_t)queue
+		 minimumNanoseconds:(uint64_t)minimumNanoseconds
+				minimumRuns:(NSUInteger)minimumRuns
+				maximumRuns:(NSUInteger)maximumRuns;
+- (void) stopTiming;
+
 @end
